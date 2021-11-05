@@ -2,6 +2,7 @@ package com.example.cadastrodealunos;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,6 +15,7 @@ public class CadastroAlunoActivity extends AppCompatActivity {
     private EditText cpf;
     private EditText telefone;
     private AlunoDAO dao;
+    private Aluno aluno = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,14 @@ public class CadastroAlunoActivity extends AppCompatActivity {
         cpf = findViewById(R.id.editCpf);
         telefone = findViewById(R.id.editTelefone);
         dao = new AlunoDAO(this);
+
+        Intent it = getIntent();
+        if(it.hasExtra("aluno")) {
+            aluno = (Aluno) it.getSerializableExtra("aluno");
+            nome.setText(aluno.getNome());
+            cpf.setText(aluno.getCpf());
+            telefone.setText(aluno.getTelefone());
+        }
 
         Button btnSalvar = findViewById(R.id.btnSalvar);
         btnSalvar.setOnClickListener(new View.OnClickListener() {
@@ -36,11 +46,20 @@ public class CadastroAlunoActivity extends AppCompatActivity {
     }
 
     public void salvar() {
-        Aluno a = new Aluno();
-        a.setNome(nome.getText().toString());
-        a.setCpf(cpf.getText().toString());
-        a.setTelefone(telefone.getText().toString());
-        long id = dao.inserir(a);
-        Toast.makeText(this, "Aluno inserido com id: " + id, Toast.LENGTH_SHORT).show();
+
+        if(aluno == null) {
+            Aluno aluno = new Aluno();
+            aluno.setNome(nome.getText().toString());
+            aluno.setCpf(cpf.getText().toString());
+            aluno.setTelefone(telefone.getText().toString());
+            long id = dao.inserir(aluno);
+            Toast.makeText(this, "Aluno inserido com id: " + id, Toast.LENGTH_SHORT).show();
+        } else {
+            aluno.setNome(nome.getText().toString());
+            aluno.setCpf(cpf.getText().toString());
+            aluno.setTelefone(telefone.getText().toString());
+            dao.atualizar(aluno);
+            Toast.makeText(this, "Aluno atualizado.", Toast.LENGTH_SHORT).show();
+        }
     }
 }

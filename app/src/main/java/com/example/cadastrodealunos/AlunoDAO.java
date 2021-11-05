@@ -26,6 +26,14 @@ public class AlunoDAO {
         return banco.insert("aluno", null, values);
     }
 
+    public void atualizar(Aluno aluno) {
+        ContentValues values = new ContentValues();
+        values.put("nome", aluno.getNome());
+        values.put("cpf", aluno.getCpf());
+        values.put("telefone", aluno.getTelefone());
+        banco.update("aluno", values, "id=?", new String[]{aluno.getId().toString()});
+    }
+
     public List<Aluno> obterTodos() {
          List<Aluno> alunos = new ArrayList<>();
          Cursor cursor  = banco.query("aluno", new String[]{"id", "nome", "cpf", "telefone"},

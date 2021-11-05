@@ -84,9 +84,18 @@ public class ListarAlunosActivity extends AppCompatActivity {
         startActivity(it);
     }
 
+    public void atualizar(MenuItem item) {
+        AdapterView.AdapterContextMenuInfo menuInfo = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+        final Aluno alunoAtualizar = alunosFiltrados.get(menuInfo.position);
+        Intent it = new Intent(this, CadastroAlunoActivity.class);
+        it.putExtra("aluno", alunoAtualizar);
+        startActivity(it);
+    }
+
     public void excluir(MenuItem item) {
         AdapterView.AdapterContextMenuInfo menuInfo = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
         final Aluno alunoExcluir = alunosFiltrados.get(menuInfo.position);
+
         AlertDialog dialog = new AlertDialog.Builder(this)
                 .setTitle("Atenção")
                 .setMessage("Realmente deseja excluir aluno?")
