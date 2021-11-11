@@ -4,3 +4,16 @@ O app tem por objetivo um simples formulário para cadastros de alunos e salvá-
 Desenvolvido para a obtenção de conhecimento e treinar o desenvolvimento android com java.
 
 Executado de acordo com essa playlist do youtube [click aqui](https://www.youtube.com/watch?v=2xGwbstHwrA&list=PLW3TB55ahKKM8gu6LzgMPz55TOqcY62dJ&index=2&ab_channel=IvanPaulinoPereira).
+
+Para clonar o projeto com SSH:
+
+```
+git clone git@github.com:Evandroad/CadastroDeAlunos.git
+```
+
+Para clonar o projeto com HTTP:
+
+```
+git clone https://github.com/Evandroad/CadastroDeAlunos.git
+```
+
