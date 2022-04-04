@@ -16,4 +16,3 @@ Para clonar o projeto com HTTP:
 ```
 git clone https://github.com/Evandroad/CadastroDeAlunos.git
 ```
-
