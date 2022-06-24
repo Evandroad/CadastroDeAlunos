@@ -9,6 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.github.rtoshiro.util.format.SimpleMaskFormatter;
+import com.github.rtoshiro.util.format.text.MaskTextWatcher;
+
 public class CadastroAlunoActivity extends AppCompatActivity {
 
     private EditText nome;
@@ -26,6 +29,15 @@ public class CadastroAlunoActivity extends AppCompatActivity {
         cpf = findViewById(R.id.editCpf);
         telefone = findViewById(R.id.editTelefone);
         dao = new AlunoDAO(this);
+
+        // Validation
+        SimpleMaskFormatter smfd = new SimpleMaskFormatter("NNN.NNN.NNN-NN");
+        MaskTextWatcher mtw1 = new MaskTextWatcher(cpf, smfd);
+        cpf.addTextChangedListener(mtw1);
+
+        SimpleMaskFormatter smft = new SimpleMaskFormatter("(NN) N NNNN-NNNN");
+        MaskTextWatcher mtw2 = new MaskTextWatcher(telefone, smft);
+        telefone.addTextChangedListener(mtw2);
 
         Intent it = getIntent();
         if(it.hasExtra("aluno")) {
