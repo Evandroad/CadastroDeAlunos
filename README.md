@@ -8,11 +8,11 @@ Executado de acordo com essa playlist do youtube [click aqui](https://www.youtub
 Para clonar o projeto com SSH:
 
 ```
-git clone git@github.com:Evandroad/CadastroDeAlunos.git
+git clone git@github.com:evandroad/student-registration.git
 ```
 
 Para clonar o projeto com HTTP:
 
 ```
-git clone https://github.com/Evandroad/CadastroDeAlunos.git
+git clone https://github.com/evandroad/student-registration.git
 ```
