@@ -1,17 +1,18 @@
-# Cadastro De Alunos
-O app tem por objetivo um simples formulário para cadastros de alunos e salvá-los em banco de dados sqlite no android.
+# Student Registration
 
-Desenvolvido para a obtenção de conhecimento e treinar o desenvolvimento android com java.
+Developed to gain knowledge and train android development with java.
+
+The app has two screens, one has a simple form for student registration, saving in a sqlite database on android. The other screen displays a list of students already registered.
 
 Executado de acordo com essa playlist do youtube [click aqui](https://www.youtube.com/watch?v=2xGwbstHwrA&list=PLW3TB55ahKKM8gu6LzgMPz55TOqcY62dJ&index=2&ab_channel=IvanPaulinoPereira).
 
-Para clonar o projeto com SSH:
+To clone the project with SSH:
 
 ```
 git clone git@github.com:evandroad/student-registration.git
 ```
 
-Para clonar o projeto com HTTP:
+To clone the project with HTTP:
 
 ```
 git clone https://github.com/evandroad/student-registration.git
