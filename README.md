@@ -11,7 +11,7 @@
 
 :arrow_down: <a href="https://github.com/evandroad/student-registration/raw/main/assets/student-registration_1.0.apk" download>Click to Download the app</a>
 
-<img src="assets/video.gif" alt="demo" width="220px" style="display: block; margin: 20px auto;">
+<img src="assets/video.gif" alt="demo" width="210px" style="display: block; margin: 20px auto;">
 
 To clone the project with SSH:
 
