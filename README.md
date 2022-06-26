@@ -4,9 +4,9 @@ Developed to gain knowledge and train android development with java.
 
 The app has two screens, one has a simple form for student registration, saving in a sqlite database on android. The other screen displays a list of students already registered.
 
-Executado de acordo com essa playlist do youtube [click aqui](https://www.youtube.com/watch?v=2xGwbstHwrA&list=PLW3TB55ahKKM8gu6LzgMPz55TOqcY62dJ&index=2&ab_channel=IvanPaulinoPereira).
+Run according to this youtube playlist [click aqui](https://www.youtube.com/watch?v=2xGwbstHwrA&list=PLW3TB55ahKKM8gu6LzgMPz55TOqcY62dJ&index=2&ab_channel=IvanPaulinoPereira).
 
- <a href="assets/student-registration_1.0.apk" download>Click to Download the app</a>
+<a href="https://github.com/evandroad/student-registration/raw/main/assets/student-registration_1.0.apk" download>Click to Download the app</a>
 
 ![demo video](assets/video.gif)
 
