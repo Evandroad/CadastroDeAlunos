@@ -3,13 +3,13 @@
 ![version](https://img.shields.io/badge/version-1.0-blue?style=flat-square)
 ![language](https://img.shields.io/badge/language-java-blue?style=flat-square)
 
-Developed to gain knowledge and train android development with sqlite.
+:man_student: Developed to gain knowledge and train android development with sqlite.
 
-The app has two screens, one has a simple form for student registration, saving in a sqlite database on android. The other screen displays a list of students already registered.
+:iphone: The app has two screens, one has a simple form for student registration, saving in a sqlite database on android. The other screen displays a list of students already registered.
 
-Run according to this youtube playlist [click aqui](https://www.youtube.com/watch?v=2xGwbstHwrA&list=PLW3TB55ahKKM8gu6LzgMPz55TOqcY62dJ&index=2&ab_channel=IvanPaulinoPereira).
+:movie_camera: Run according to this youtube playlist [click aqui](https://www.youtube.com/watch?v=2xGwbstHwrA&list=PLW3TB55ahKKM8gu6LzgMPz55TOqcY62dJ&index=2&ab_channel=IvanPaulinoPereira).
 
-<a href="https://github.com/evandroad/student-registration/raw/main/assets/student-registration_1.0.apk" download>Click to Download the app</a>
+:arrow_down: <a href="https://github.com/evandroad/student-registration/raw/main/assets/student-registration_1.0.apk" download>Click to Download the app</a>
 
 ![demo video](assets/video.gif)
 
