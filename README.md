@@ -6,6 +6,10 @@ The app has two screens, one has a simple form for student registration, saving 
 
 Executado de acordo com essa playlist do youtube [click aqui](https://www.youtube.com/watch?v=2xGwbstHwrA&list=PLW3TB55ahKKM8gu6LzgMPz55TOqcY62dJ&index=2&ab_channel=IvanPaulinoPereira).
 
+ <a href="assets/student-registrarion_1.0.apk" download>Click to Download the app</a>
+
+![demo video](assets/video.gif)
+
 To clone the project with SSH:
 
 ```

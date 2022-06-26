@@ -21,6 +21,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def project = "student-registration"
+            def SEP = "_"
+            def version = variant.versionName
+
+            def newApkName = project + SEP + version + ".apk"
+
+            outputFileName = new File(newApkName)
+        }
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8

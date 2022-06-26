@@ -39,6 +39,8 @@ public class CadastroAlunoActivity extends AppCompatActivity {
         MaskTextWatcher mtw2 = new MaskTextWatcher(telefone, smft);
         telefone.addTextChangedListener(mtw2);
 
+        nome.requestFocus();
+
         Intent it = getIntent();
         if(it.hasExtra("aluno")) {
             aluno = (Aluno) it.getSerializableExtra("aluno");
@@ -48,12 +50,7 @@ public class CadastroAlunoActivity extends AppCompatActivity {
         }
 
         Button btnSalvar = findViewById(R.id.btnSalvar);
-        btnSalvar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                salvar();
-            }
-        });
+        btnSalvar.setOnClickListener(v -> salvar());
 
     }
 
@@ -73,5 +70,10 @@ public class CadastroAlunoActivity extends AppCompatActivity {
             dao.atualizar(aluno);
             Toast.makeText(this, "Aluno atualizado.", Toast.LENGTH_SHORT).show();
         }
+
+        nome.setText("");
+        cpf.setText("");
+        telefone.setText("");
+        nome.requestFocus();
     }
 }
