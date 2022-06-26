@@ -1,6 +1,9 @@
 # Student Registration
 
-Developed to gain knowledge and train android development with java.
+![version](https://img.shields.io/badge/version-1.0-blue?style=flat-square)
+![language](https://img.shields.io/badge/language-java-blue?style=flat-square)
+
+Developed to gain knowledge and train android development with sqlite.
 
 The app has two screens, one has a simple form for student registration, saving in a sqlite database on android. The other screen displays a list of students already registered.
 
@@ -12,12 +15,8 @@ Run according to this youtube playlist [click aqui](https://www.youtube.com/watc
 
 To clone the project with SSH:
 
-```
-git clone git@github.com:evandroad/student-registration.git
-```
+    git clone git@github.com:evandroad/student-registration.git
 
 To clone the project with HTTP:
 
-```
-git clone https://github.com/evandroad/student-registration.git
-```
+    git clone https://github.com/evandroad/student-registration.git
