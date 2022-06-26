@@ -1,4 +1,4 @@
-# Student Registration
+# :clipboard: Student Registration        
 
 ![version](https://img.shields.io/badge/version-1.0-blue?style=flat-square)
 ![language](https://img.shields.io/badge/language-java-blue?style=flat-square)
